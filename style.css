@@ -306,22 +306,6 @@ nav{
         float: left;
     }
 
-    .details-container1 {
-        padding: 1-5rem;
-        flex: 1;
-        background: white;
-        border-radius: 2rem;
-        border: rgb(53, 53, 53) 0.1rem solid;
-        border-color: rgb(163, 163, 163);
-        text-align: center;
-        float: left;
-
-    }
-        
-    .details-container2 {
-        float: right;
-    }
-
     .section-container {
         gap: 4rem;
         height: 80%;
@@ -338,6 +322,11 @@ nav{
     #experience {
         position: relative;
     }
+
+    h1 {
+        text-align: center;
+    }
+
      .experience-sub-title {
         color: rgb(85, 85, 85);
         font-weight: 600;
@@ -349,27 +338,36 @@ nav{
 
      .experience-details-container {
         display: flex;
-        justify-content: center;
-        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+        width: 100%;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-sizing: border-box;
      }
 
+     .details-container1,
+     .details-container2 {
+        width: 45%;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+     }
+
+
      .article-container {
-        text-align: initial;
-        flex-wrap: wrap;
-        flex-direction: row;
+        text-align: left;
+        flex-direction: column;
         gap: 2.5rem;
-        justify-content: space-around;
-        border: 2px;
-        padding: 10px;
-        display: inline-block;
-        max-width: 100%;
-        height: auto;
+        justify-content: flex-start;
+        display: flex;
+        
      }
 
      article {
         display: flex;
-        width: 10rem;
-        justify-content: space-around;
+        align-items: center;
         gap: 0.5rem;
      }
 
@@ -397,7 +395,11 @@ nav{
      .project-tittle {
         margin: 1rem;
         color: black;
+        border-color: rgb(163, 163, 163);
      }
+
+     /*CONTACT*/
+
 
      
 
